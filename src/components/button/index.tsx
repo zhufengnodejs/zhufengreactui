@@ -447,12 +447,16 @@ function Button(props: PropsWithChildren<ButtonProps>) {
       return "a";
     }
   }, [isLink]);
-
-  return (
+  return React.createElement(
+    StyledButton,
+    { as: btnType, ...props, "data-testid": "button" },
+    buttonInner
+  );
+  /* return (
     <StyledButton as={btnType} {...props} data-testid="button">
       {buttonInner}
     </StyledButton>
-  );
+  ); */
 }
 Button.defaultProps = {
   isLoading: false,
