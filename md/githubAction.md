@@ -1,3 +1,6 @@
+## github-actions参考文档
+- [github-actions参考文档](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
+
 ## 1.生成token
 - 1.登录github并访问 [tokens](https://github.com/settings/tokens)页面
 - 2. 生成token并拷贝到剪贴板上
@@ -33,6 +36,8 @@
 ## 4.添加Actions
 - 打开项目的[actions(https://github.com/zhufengnodejs/zhufengreactui/actions)页面
 - 根据向导添加脚本,会自动写到`.github\workflows\blank.yml`目录中
+
+![setupworkflow](http://img.zhufengpeixun.cn/setupworkflow.png)
 
 ```js
 name: Build and Deploy
