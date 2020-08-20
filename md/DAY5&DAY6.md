@@ -219,7 +219,7 @@ storybook是可以生成静态页面的，需要改一下命令：
 
 为了让action安装完毕后正常工作，还需要将peerDependencies的依赖复制进devDependencies。
 
-项目的settings中的secrets里面可以填入githubToken。
+项目的settings中的secrets里面可以填入githubToken。 b285ca4574ed83df39d184bfc69fcbde63ade079
 
 这里我name为ACCESS_TOKEN，值为生成的githubToken。
 
@@ -251,6 +251,8 @@ jobs:
 ```
 
 之后只要push就可以自动部署githubpage页面。
+
+[github-actions参考文档](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
 
 #### COVERALLS代码覆盖率
 
