@@ -261,7 +261,8 @@ jobs:
 
 官网https://coveralls.io/
 
-注册并登录，同步后使用add repo添加已上传项目。并在github仓库的security里设置环境变量。
+注册并登录，同步后使用add repo添加已上传项目。
+并在github仓库的security里设置环境变量。
 
 npm官网https://www.npmjs.com/package/coveralls
 
@@ -280,7 +281,7 @@ npm官网https://www.npmjs.com/package/coveralls
         env:
           COVERALLS_SERVICE_NAME: 'GitHub CI'
           COVERALLS_GIT_BRANCH: master
-          COVERALLS_REPO_TOKEN : ${{ secrets.COVERALLS_REPO_TOKEN }}
+          COVERALLS_REPO_TOKEN : ${{secrets.COVERALLS_REPO_TOKEN}}
         run: |
           npm run coverall
 ```
