@@ -223,7 +223,8 @@ storybook是可以生成静态页面的，需要改一下命令：
 
 这里我name为ACCESS_TOKEN，值为生成的githubToken。
 
-建立github actions，使用向导创建main.yml，复制以下内容粘贴进去：
+[建立github actions](https://github.com/zhufengnodejs/zhufengreactui/actions)
+，使用向导创建main.yml，复制以下内容粘贴进去：
 
 ```
 name: Build and Deploy

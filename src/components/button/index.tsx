@@ -82,9 +82,7 @@ export interface CustormButtonProps {
 export type ButtonProps = CustormButtonProps &
   AnchorHTMLAttributes<HTMLAnchorElement> &
   ButtonHTMLAttributes<HTMLButtonElement>;
-const Mybutton = styled.button({
-  color: "red",
-});
+
 const StyledButton = styled.button<ButtonProps>`
   border: 0;
   border-radius: 3em;
@@ -106,7 +104,7 @@ const StyledButton = styled.button<ButtonProps>`
   background: transparent;
 
 
-  font-size: ${(props) =>
+  font-size: ${(props:any) =>
     props.size === SIZES.small ? typography.size.s1 : typography.size.s2}px;
   font-weight: ${typography.weight.extrabold};
   line-height: 1;
